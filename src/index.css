@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+  }
+  
+  .page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .card {
+    width: 405px;
+    background: #ffffff;
+    border-radius: 9px;
+    padding: 16px 14px;
+    text-align: center;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #101827;
+  }
+  
+  .subtitle {
+    margin: 3px 0 11px;
+    font-size: 9px;
+    color: #8b96a7;
+  }
+  
+  .digits {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
+  
+  .digit {
+    height: 70px;
+    border: 1px dashed #dce2e9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .digit:active {
+    cursor: grabbing;
+  }
+  
+  .digit.dragging {
+    opacity: 0.45;
+  }
+  
+  .digit.drag-over {
+    border: 2px solid #4c7dff;
+  }
+  
+  .tip {
+    margin: 10px 0 0;
+    font-size: 8px;
+    color: #9aa3b1;
+  }
+  
+  .tip code {
+    font-size: 7px;
+    background: #f1f3f6;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
